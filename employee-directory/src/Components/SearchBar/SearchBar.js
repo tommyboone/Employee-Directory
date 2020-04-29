@@ -2,18 +2,23 @@ import React from "react";
 import "./style.css";
 import Select from "react-select";
 import EmployeeList from "../../EmployeeList.json";
+import image from "../../images/James.jpg";
 // import {render} from 'react-dom';
 
 const options = EmployeeList.map(({ data }) => {
-  return (
-    {
-      value: [data.name, "- ", data.info],
-      label:[data.name, "- ", data.info]
-
-    }
-  )})
-
-
+  return {
+    value: [data.first_name, " ", data.last_name, "- ", data.info],
+    label: [
+      <img src={image} alt="JamesPhoto" height="50" width="50" />,
+      data.first_name,
+      " ",
+      data.last_name,
+      "- ",
+      data.info,
+      "  ",
+    ],
+  };
+});
 
 class SearchBar extends React.Component {
   state = {
@@ -34,7 +39,7 @@ class SearchBar extends React.Component {
         options={options}
         onChange={this.handleChange}
         openMenuOnClick={false}
-        placeholder="Search for an employee..."
+        placeholder="Search for an employee by name or role..."
       />
     );
   }
