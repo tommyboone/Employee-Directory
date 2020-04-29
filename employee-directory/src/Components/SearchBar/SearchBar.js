@@ -7,7 +7,7 @@ import image from "../../images/James.jpg";
 
 const options = EmployeeList.map(({ data }) => {
   return {
-    value: [data.first_name, " ", data.last_name, "- ", data.info],
+    value: [data.first_name, data.last_name, data.info],
     label: [
       <img src={image} alt="JamesPhoto" height="50" width="50" />,
       data.first_name,

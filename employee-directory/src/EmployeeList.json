@@ -2,21 +2,22 @@
     { 
         "key": "t1",
         "data":{
-            "name": "James Jameson",
+            "first_name": "James",
+            "last_name": "Jameson",
             "info": "Software Development",
             "contact": {
                 "office": "781-000-002",
                 "mobile": "087-321-0292",
                 "sms": "617-000-002",
-                "email": "jtaylor@company.ie",
-                "img": "Employee-Directory/employee-directory/public/images/Avatar-test.jpg"
+                "email": "jtaylor@company.ie"
             }
         }
     },
     {
         "key": "t2",
         "data":{
-            "name": "Chris Cross",
+            "first_name": "Chris",
+            "last_name":"Cross",
             "info": "Human Resources",
             "contact": {
                 "office": "781-000-201",
@@ -29,8 +30,9 @@
     {
         "key": "t3",
         "data":{
-            "name": "Frank Franklin",
-            "info": "Business Analyst",
+            "first_name": "Frank",
+            "last_name":"Franklin",
+            "info": "Data Analytics",
             "contact": {
                 "office": "781-000-021",
                 "mobile": "085-521-6122",
@@ -42,8 +44,9 @@
     {
         "key": "t3",
         "data":{
-            "name": "Frank Jacobs",
-            "info": "UI/UX Designer",
+            "first_name": "Frank",
+            "last_name": "Jacobs",
+            "info": "UI/UX Design",
             "contact": {
                 "office": "000-123-4567",
                 "mobile": "085-521-6122",
@@ -55,7 +58,8 @@
     {
         "key": "t4",
         "data":{
-            "name": "Paul Paulson",
+            "first_name": "Paul",
+            "last_name":"Paulson",
             "info": "Software Development",
             "contact": {
                 "office": "781-000-003",
@@ -68,7 +72,8 @@
     {
         "key": "t5",
         "data":{
-            "name": "Thomas Thompson",
+            "first_name": "Thomas",
+            "last_name": "Thompson",
             "info": "Quality Assurance",
             "contact": {
                 "office": "781-000-957",
@@ -78,12 +83,13 @@
             }
         }
     },
-    
+
      {  
         "key": "t7",
         "data":{
-            "name": "Sarah Saraaaaa",
-            "info": "UI/UX Designer",
+            "first_name": "Sarah",
+            "last_name":" Saraaaaa",
+            "info": "UI/UX Design",
             "contact": {
                 "office": "781-000-012",
                 "mobile": "086-321-1752",
