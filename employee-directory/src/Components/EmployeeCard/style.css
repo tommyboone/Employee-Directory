@@ -1,3 +1,8 @@
 .card-title{
     text-align:center;
 }
+
+.card-header{
+    text-align:center;
+    background-color: rgb(14, 167, 80)
+}
