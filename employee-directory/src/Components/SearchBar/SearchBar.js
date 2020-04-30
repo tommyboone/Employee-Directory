@@ -2,14 +2,20 @@ import React from "react";
 import "./style.css";
 import Select from "react-select";
 import EmployeeList from "../../EmployeeList.json";
-import image from "../../images/James.jpg";
-// import {render} from 'react-dom';
+import EmployeeCard from "../EmployeeCard/EmployeeCard";
+import { Col, Row } from "react-bootstrap";
+// import image from "../../images/James.jpg"
 
 const options = EmployeeList.map(({ data }) => {
   return {
     value: [data.first_name, data.last_name, data.info],
     label: [
-      <img src={image} alt="JamesPhoto" height="50" width="50" />,
+      <img
+        src={process.env.PUBLIC_URL + `/images/${data.first_name}.jpg`}
+        alt="Employee Avatar"
+        height="50"
+        width="50"
+      />,
       data.first_name,
       " ",
       data.last_name,
@@ -23,24 +29,46 @@ const options = EmployeeList.map(({ data }) => {
 class SearchBar extends React.Component {
   state = {
     selectedOption: null,
+    selectedDisplay: null,
   };
   handleChange = (selectedOption) => {
-    this.setState({ selectedOption }, () =>
-      console.log(`Option selected:`, this.state.selectedOption)
+    var selectedEmp;
+
+    for (var i = 0; i < EmployeeList.length; i++) {
+      if (EmployeeList[i].data.first_name === selectedOption.value[0]) {
+        selectedEmp = EmployeeList[i];
+      }
+    }
+
+    console.log("Selected Employee", selectedEmp);
+    //for thru json with a if checking hte name
+    // selectedEmp = json[i]
+
+    console.log("selected in onChange", selectedOption);
+    this.setState(
+      { selectedOption: selectedOption, selectedDisplay: selectedEmp.data },
+      () => console.log(`Option selected:`, this.state.selectedOption)
     );
   };
   render() {
     const { selectedOption } = this.state;
 
     return (
-      <Select
-        className="search-container"
-        value={selectedOption}
-        options={options}
-        onChange={this.handleChange}
-        openMenuOnClick={false}
-        placeholder="Search for an employee by name or role..."
-      />
+      <Row>
+        <Col className="col-lg-6">
+          <Select
+            className="search-container"
+            value={selectedOption}
+            options={options}
+            onChange={this.handleChange}
+            openMenuOnClick={false}
+            placeholder="Search for an employee by name or role..."
+          />
+        </Col>
+        <Col className="col-lg-6">
+          <EmployeeCard selectedEmp={this.state.selectedDisplay} />
+        </Col>
+      </Row>
     );
   }
 }
