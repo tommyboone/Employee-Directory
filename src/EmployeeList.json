@@ -104,5 +104,125 @@
                 "img":"./images/Sarah.jpg"
             }
         }
+    },
+    {  
+        "key": "t8",
+        "data":{
+            "first_name": "Jenny",
+            "last_name":" Jenner",
+            "info": "Legal",
+            "contact": {
+                "office": "781-123-4512",
+                "mobile": "097-4312-1752",
+                "sms": "123-345-4567",
+                "email": "jjen@company.ie",
+                "img":"./images/Jenny.jpg"
+            }
+        }
+    },
+    {  
+        "key": "t9",
+        "data":{
+            "first_name": "Lisa",
+            "last_name":" Simpson",
+            "info": "Quality Assurance",
+            "contact": {
+                "office": "321-340-4512",
+                "mobile": "333-222-1111",
+                "sms": "999-888-7777",
+                "email": "lsimps@company.ie",
+                "img":"./images/Lisa.jpg"
+            }
+        }
+    },
+    {  
+        "key": "t10",
+        "data":{
+            "first_name": "Eric",
+            "last_name":"Erickson",
+            "info": "Legal",
+            "contact": {
+                "office": "123-042-3321",
+                "mobile": "990-887-6654",
+                "sms": "676-878-9898",
+                "email": "e.erickson@company.ie",
+                "img":"./images/Eric.jpg"
+            }
+        }
+    },
+    {  
+        "key": "t11",
+        "data":{
+            "first_name": "Pete",
+            "last_name":"Peterson",
+            "info": "Software Development",
+            "contact": {
+                "office": "134-013-1322",
+                "mobile": "129-913-3939",
+                "sms": "993-033-0122",
+                "email": "p.peterson@company.ie",
+                "img":"./images/Pete.jpg"
+            }
+        }
+    },
+    {  
+        "key": "t12",
+        "data":{
+            "first_name": "Joe",
+            "last_name":"Dirt",
+            "info": "Accounting",
+            "contact": {
+                "office": "331-3300-0012",
+                "mobile": "090-331-2863",
+                "sms": "337-590-0012",
+                "email": "joe@dirt.company",
+                "img":"./images/Joe.jpg"
+            }
+        }
+    },
+    {  
+        "key": "t13",
+        "data":{
+            "first_name": "Sarah",
+            "last_name":"White",
+            "info": "Database Development",
+            "contact": {
+                "office": "331-450-9992",
+                "mobile": "339-991-3352",
+                "sms": "633-440-3312",
+                "email": "sarah.w@othersarah.gov",
+                "img":"./images/Sarah.jpg"
+            }
+        }
+    },
+    {  
+        "key": "t14",
+        "data":{
+            "first_name": "Chris",
+            "last_name":"Topher",
+            "info": "Database Development",
+            "contact": {
+                "office": "831-350-0123",
+                "mobile": "033-331-3352",
+                "sms": "337-304-0442",
+                "email": "chris_topher@company.ie",
+                "img":"./images/Chris.jpg"
+            }
+        }
+    },
+    {  
+        "key": "t15",
+        "data":{
+            "first_name": "Jake",
+            "last_name":" Jackson",
+            "info": "Human Resources",
+            "contact": {
+                "office": "315-039-0342",
+                "mobile": "336-551-5952",
+                "sms": "917-330-4321",
+                "email": "jake.jack@e.mail",
+                "img":"./images/Jake.jpg"
+            }
+        }
     }
 ]
