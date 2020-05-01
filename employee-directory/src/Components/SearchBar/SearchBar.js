@@ -4,7 +4,6 @@ import Select from "react-select";
 import EmployeeList from "../../EmployeeList.json";
 import EmployeeCard from "../EmployeeCard/EmployeeCard";
 import { Col, Row } from "react-bootstrap";
-// import image from "../../images/James.jpg"
 
 const options = EmployeeList.map(({ data }) => {
   return {
@@ -13,6 +12,7 @@ const options = EmployeeList.map(({ data }) => {
       <img
         src={process.env.PUBLIC_URL + `/images/${data.first_name}.jpg`}
         alt="Employee Avatar"
+        className="employee-avatar"
         height="50"
         width="50"
       />,
@@ -40,11 +40,6 @@ class SearchBar extends React.Component {
       }
     }
 
-    console.log("Selected Employee", selectedEmp);
-    //for thru json with a if checking hte name
-    // selectedEmp = json[i]
-
-    console.log("selected in onChange", selectedOption);
     this.setState(
       { selectedOption: selectedOption, selectedDisplay: selectedEmp.data },
       () => console.log(`Option selected:`, this.state.selectedOption)
@@ -52,7 +47,6 @@ class SearchBar extends React.Component {
   };
   render() {
     const { selectedOption } = this.state;
-
     return (
       <Row>
         <Col className="col-lg-6">

@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 import { Card, Button, ListGroup, ListGroupItem } from "react-bootstrap";
 import "./style.css";
-// import EmployeeList from "../../EmployeeList.json";
-// import image from "../../../public/images/James.jpg"
+
 
 class EmployeeCard extends Component {
   onClick = () => {
@@ -10,8 +9,7 @@ class EmployeeCard extends Component {
   };
 
   render() {
-    //  const contact  = EmployeeList[0].data
-    console.log("these are the props", this.props);
+  
     if (this.props.selectedEmp) {
       return (
         <Card>
@@ -21,6 +19,7 @@ class EmployeeCard extends Component {
               alt="avatar"
               height="150"
               width="150"
+              className="employee-avatar"
             />
           </Card.Header>
           <br />
@@ -45,8 +44,9 @@ class EmployeeCard extends Component {
             </ListGroup>
             <br />
             <Button
-              variant="success"
+              variant="secondary"
               href={`mailto:${this.props.selectedEmp.contact.email}`}
+              className="email-btn"
             >
               Email {this.props.selectedEmp.first_name} ...
             </Button>
