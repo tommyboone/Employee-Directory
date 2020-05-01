@@ -1,0 +1,14 @@
+.card-title{
+    text-align:center;
+}
+
+.card-header{
+    text-align:center;
+    background-color: midnightblue;
+    border-bottom: 4px solid rgb(172, 36, 36)
+}
+.email-btn{
+    background-color:rgb(172, 36, 36);
+    border: rgb(172, 36, 36);
+    color:#fff;
+}

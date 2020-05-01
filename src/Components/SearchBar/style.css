@@ -1,0 +1,9 @@
+.search-container{
+    float:left;
+    width: 480px;
+
+}
+
+.employee-avatar{
+    border-radius:100px;
+}
